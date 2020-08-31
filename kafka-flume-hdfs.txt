@@ -3,4 +3,4 @@ sh kafka-server-start.sh ../config/server.properties
 sh kafka-topics.sh --zookeeper localhost:2182 --create --topic flumetopic --partition 1 --replication-factor 1
 flume-ng agent --conf conf --conf-file kafkasrc.conf --name a1 -Dflume.root.logger=INFO,console
 sh kafka-console-producer.sh --broker-list localhost:9092 --topic flumetopic
-==> write some messages and check hdfs file for the messages typed. 
+==> write some messages and check hdfs file for the messages typed. https://github.com/nayanabhatm/Flume_Projects.git
